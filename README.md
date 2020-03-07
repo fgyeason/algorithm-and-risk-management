@@ -1,12 +1,18 @@
-# Machine learning notes
-## Notes Description
-Through a series of recent breakthroughs, deep learning has boosted the entire field of machine learning. Now, even programmers who know close to nothing about this technology can use simple, efficient tools to implement programs capable of learning from data. This practical book shows you how.
+# 一、互联网业务安全
+## 1.1 不同场景下的业务安全
+### 1.1.1 账户业务安全
 
-By using concrete examples, minimal theory, and two production-ready Python frameworks—Scikit-Learn and TensorFlow—author Aurélien Géron helps you gain an intuitive understanding of the concepts and tools for building intelligent systems. You’ll learn a range of techniques, starting with simple linear regression and progressing to deep neural networks. With exercises in each chapter to help you apply what you’ve learned, all you need is programming experience to get started.
+#### 账户安全保障
 
-Explore the machine learning landscape, particularly neural nets
-Use Scikit-Learn to track an example machine-learning project end-to-end
-Explore several training models, including support vector machines, decision trees, random forests, and ensemble methods
-Use the TensorFlow library to build and train neural nets
-Dive into neural net architectures, including convolutional nets, recurrent nets, and deep reinforcement learning
-Learn techniques for training and scaling deep neural nets
+账户是互联网生态中的基本主体单元，对用户来说，账号安全涉及用户个人隐私的信息的安全、用户体验以及资金安全等方面；对于互联网平台，账户安全涉及广告投放、流量购买、营销活动以及战略决策等方面。
+- 横向来看，账户安全主要从注册和登录这两个环节来保障。
+- 纵向来看，维护账户安全的手段主要有网络层防护、数据层防护以及业务层防护，相应的手段不局限与WAF、设备指纹、验证码、生物探针、数字证书、安全SDK。这些防护手段从技术原理上可以总结为加密/解密、人机识别两大类
+- 黑产手段：群控设备、养卡平台、养号平台、打码平台
+- 算法选择：K-means、高斯混合（GMM）；OPTICS、DEBSCAN。
+- 应用方法：如果两个注册用户时的ip地址段相同、则两个用户的之间的边权重增加1，如果邮箱后缀也相同，则权重就为2，以此类推，我们就可以把某段时间内子互联网平台上注册的账号关联成一张权重无向图，再使用图嵌入表征的方法得到每个账号节点高维向量，然后将这些高维向量联合基础特征进行聚类。可以识别有聚集性的注册垃圾账号的团体。
+
+### 1.1.2 电商平台安全
+### 1.1.3 社交平台安全
+### 1.1.4 内容业务安全
+### 1.1.5 信息业务安全
+### 1.1.6 信贷业务安全
